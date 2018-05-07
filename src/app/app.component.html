@@ -1,0 +1,19 @@
+<h1>
+  {{title}}
+</h1>
+
+<div *ngIf="dataIsAvailable">
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Author</th>
+    </tr>
+    <tr *ngFor="let post of posts">
+      <td>{{post.id}}</td>
+      <td>{{post.title}}</td>
+      <td>{{post.author}}</td>
+    </tr>
+  </table>
+
+</div>
